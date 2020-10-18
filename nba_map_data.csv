@@ -1,52 +1,52 @@
-birth_state,count,normalised count
-Indiana,94,3.12%
-Kentucky,82,2.72%
-Idaho,5,0.17%
-Pennsylvania,162,5.38%
-New Jersey,91,3.02%
-Michigan,131,4.35%
-New York,286,9.49%
-Oklahoma,30,1.00%
-Louisiana,101,3.35%
-Texas,127,4.22%
-Ohio,136,4.51%
-California,337,11.18%
-Minnesota,45,1.49%
-Montana,9,0.30%
-Tennessee,72,2.39%
-Illinois,203,6.74%
-Georgia,113,3.75%
-Colorado,16,0.53%
-Wisconsin,44,1.46%
-Utah,17,0.56%
-Wyoming,5,0.17%
-Oregon,23,0.76%
-West Virginia,19,0.63%
-Kansas,27,0.90%
-North Dakota,6,0.20%
-Massachusetts,36,1.19%
-Missouri,45,1.49%
-North Carolina,96,3.19%
-Hawaii,2,0.07%
-Nebraska,11,0.37%
-Arizona,12,0.40%
-Iowa,20,0.66%
-Arkansas,47,1.56%
-South Dakota,5,0.17%
-Maryland,61,2.02%
-Connecticut,32,1.06%
-District of Columbia,57,1.89%
-Mississippi,72,2.39%
-Virginia,60,1.99%
-Alabama,74,2.46%
-Florida,93,3.09%
-Washington,48,1.59%
-South Carolina,33,1.10%
-Rhode Island,6,0.20%
-Delaware,6,0.20%
-Maine,1,0.03%
-Nevada,6,0.20%
-New Hampshire,1,0.03%
-Taiwan,1,0.03%
-Alaska,1,0.03%
-New Mexico,6,0.20%
+birth_state,count,percentage,normalised count
+Indiana,94,0.0312,3.12
+Kentucky,82,0.0272,2.72
+Idaho,5,0.0017,0.17
+Pennsylvania,162,0.0538,5.38
+New Jersey,91,0.0302,3.02
+Michigan,131,0.0435,4.35
+New York,286,0.0949,9.49
+Oklahoma,30,0.01,1
+Louisiana,101,0.0335,3.35
+Texas,127,0.0422,4.22
+Ohio,136,0.0451,4.51
+California,337,0.1118,11.18
+Minnesota,45,0.0149,1.49
+Montana,9,0.003,0.3
+Tennessee,72,0.0239,2.39
+Illinois,203,0.0674,6.74
+Georgia,113,0.0375,3.75
+Colorado,16,0.0053,0.53
+Wisconsin,44,0.0146,1.46
+Utah,17,0.0056,0.56
+Wyoming,5,0.0017,0.17
+Oregon,23,0.0076,0.76
+West Virginia,19,0.0063,0.63
+Kansas,27,0.009,0.9
+North Dakota,6,0.002,0.2
+Massachusetts,36,0.0119,1.19
+Missouri,45,0.0149,1.49
+North Carolina,96,0.0319,3.19
+Hawaii,2,0.0007,0.07
+Nebraska,11,0.0037,0.37
+Arizona,12,0.004,0.4
+Iowa,20,0.0066,0.66
+Arkansas,47,0.0156,1.56
+South Dakota,5,0.0017,0.17
+Maryland,61,0.0202,2.02
+Connecticut,32,0.0106,1.06
+District of Columbia,57,0.0189,1.89
+Mississippi,72,0.0239,2.39
+Virginia,60,0.0199,1.99
+Alabama,74,0.0246,2.46
+Florida,93,0.0309,3.09
+Washington,48,0.0159,1.59
+South Carolina,33,0.011,1.1
+Rhode Island,6,0.002,0.2
+Delaware,6,0.002,0.2
+Maine,1,0.0003,0.03
+Nevada,6,0.002,0.2
+New Hampshire,1,0.0003,0.03
+Taiwan,1,0.0003,0.03
+Alaska,1,0.0003,0.03
+New Mexico,6,0.002,0.2
