@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "NBA Player Birth States",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json",
+    "format": {"type": "topojson", "feature": "states"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/apra28/FIT3179/main/nba_map_data.csv"
+        },
+        "key": "birth_state",
+        "fields": ["normalised count"]
+      }
+    }
+  ],
+  "projection": {"type": "albersUsa"},
+  "mark": {"type": "geoshape"},
+  "encoding": {
+    "color": {
+      "field": "normalised count",
+      "type": "quantitative",
+      "scale": {"scheme": "browns"},
+      "title": "Percentage of Players"
+    },
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "State"},
+      {
+        "field": "normalised count",
+        "type": "quantitative",
+        "title": "% of Players"
+      }
+    ]
+  },
+  "config": {}
+}
