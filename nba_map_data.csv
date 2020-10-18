@@ -1,52 +1,52 @@
-birth_state,count
-Indiana,94
-Kentucky,82
-Idaho,5
-Pennsylvania,162
-New Jersey,91
-Michigan,131
-New York,286
-Oklahoma,30
-Louisiana,101
-Texas,127
-Ohio,136
-California,337
-Minnesota,45
-Montana,9
-Tennessee,72
-Illinois,203
-Georgia,113
-Colorado,16
-Wisconsin,44
-Utah,17
-Wyoming,5
-Oregon,23
-West Virginia,19
-Kansas,27
-North Dakota,6
-Massachusetts,36
-Missouri,45
-North Carolina,96
-Hawaii,2
-Nebraska,11
-Arizona,12
-Iowa,20
-Arkansas,47
-South Dakota,5
-Maryland,61
-Connecticut,32
-District of Columbia,57
-Mississippi,72
-Virginia,60
-Alabama,74
-Florida,93
-Washington,48
-South Carolina,33
-Rhode Island,6
-Delaware,6
-Maine,1
-Nevada,6
-New Hampshire,1
-Taiwan,1
-Alaska,1
-New Mexico,6
+birth_state,count,normalised count
+Indiana,94,3.12%
+Kentucky,82,2.72%
+Idaho,5,0.17%
+Pennsylvania,162,5.38%
+New Jersey,91,3.02%
+Michigan,131,4.35%
+New York,286,9.49%
+Oklahoma,30,1.00%
+Louisiana,101,3.35%
+Texas,127,4.22%
+Ohio,136,4.51%
+California,337,11.18%
+Minnesota,45,1.49%
+Montana,9,0.30%
+Tennessee,72,2.39%
+Illinois,203,6.74%
+Georgia,113,3.75%
+Colorado,16,0.53%
+Wisconsin,44,1.46%
+Utah,17,0.56%
+Wyoming,5,0.17%
+Oregon,23,0.76%
+West Virginia,19,0.63%
+Kansas,27,0.90%
+North Dakota,6,0.20%
+Massachusetts,36,1.19%
+Missouri,45,1.49%
+North Carolina,96,3.19%
+Hawaii,2,0.07%
+Nebraska,11,0.37%
+Arizona,12,0.40%
+Iowa,20,0.66%
+Arkansas,47,1.56%
+South Dakota,5,0.17%
+Maryland,61,2.02%
+Connecticut,32,1.06%
+District of Columbia,57,1.89%
+Mississippi,72,2.39%
+Virginia,60,1.99%
+Alabama,74,2.46%
+Florida,93,3.09%
+Washington,48,1.59%
+South Carolina,33,1.10%
+Rhode Island,6,0.20%
+Delaware,6,0.20%
+Maine,1,0.03%
+Nevada,6,0.20%
+New Hampshire,1,0.03%
+Taiwan,1,0.03%
+Alaska,1,0.03%
+New Mexico,6,0.20%
