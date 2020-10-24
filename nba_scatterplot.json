@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": {
+    "text": "Profile of College NBA Players ",
+    "subtitle": "Scattler Plot of the height and weight of NBA players from each college"
+  },
+  "width": 750,
+  "height": 450,
+  "data": {
+    "url": "https://raw.githubusercontent.com/apra28/FIT3179/main/NBA_filtered_data.csv"
+  },
+  "params": [
+    {
+      "name": "born_filter",
+      "value": 1950,
+      "bind": {
+        "input": "range",
+        "min": 1921,
+        "max": 1996,
+        "step": 1,
+        "name": "Birth Year"
+      }
+    }
+  ],
+  "selection": {
+    "category_highlight": {
+      "type": "multi",
+      "fields": ["college"],
+      "bind": "legend"
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.college =='University of Kentucky' || datum.college =='University of California' || datum.college =='University of North Carolina'|| datum.college =='University of Kansas' || datum.college =='Duke University' || datum.college =='St. John\\'s University' || datum.college =='University of Notre Dame' || datum.college =='Michigan State University' || datum.college =='Syracuse University' || datum.college =='University of Louisville'"
+    },
+    {"filter": "datum.born > born_filter"}
+  ],
+  "mark": "circle",
+  "encoding": {
+    "x": {"field": "height", "type": "quantitative", "scale": {"zero": false}},
+    "y": {"field": "weight", "type": "quantitative", "scale": {"zero": false}},
+    "size": {"value": 45},
+    "color": {"field": "college", "type": "nominal", "title": "College"},
+    "opacity": {
+      "condition": {"selection": "category_highlight", "value": 1},
+      "value": 0
+    },
+    "tooltip": [
+      {"field": "college", "type": "nominal", "title": "College"},
+      {"field": "Player", "type": "nominal", "title": "Name"},
+      {"field": "weight", "type": "quantitative", "title": "Weight"},
+      {"field": "height", "type": "quantitative", "title": "Height"}
+    ]
+  },
+  "config": {}
+}
