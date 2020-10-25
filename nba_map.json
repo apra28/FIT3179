@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "NBA Player Birth States",
+  "title": {"text":"NBA Player Birth States ", "subtitle": "Percentage (%) of NBA players since 1950 born in each US State"},
   "width": 800,
   "height": 600,
   "data": {
@@ -25,8 +25,10 @@
     "color": {
       "field": "normalised count",
       "type": "quantitative",
-      "scale": {"scheme": "browns"},
-      "title": "Percentage of Players"
+      "scale": {"type": "threshold",
+                "domain": [2,4,8],
+                "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]},
+      "title": "% of Players"
     },
     "tooltip": [
       {"field": "properties.name", "type": "nominal", "title": "State"},
