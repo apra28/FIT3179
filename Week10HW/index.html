@@ -59,13 +59,17 @@
 
   <h1>Week 10 Homework</h1>
 
-  <h2>Where are NBA Players born?</h2>
+  <h2>Where are NBA players born?</h2>
   
   <div id="choropleth_map"></div>
 
-  <h2>Profile of College NBA Players over Time </h2>
+  <h2>How has the profile of college NBA players changed over time?</h2>
 
   <div id="bubble_plot"></div>
+  
+  <h2>Which colleges have the most NBA players? </h2>
+
+  <div id="college_barchart"></div>
 
 </div>
   
@@ -82,6 +86,14 @@
     vegaEmbed('#bubble_plot', vis2).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+    
+    var vis3 = "https://apra28.github.io/FIT3179/nba_collegebar.json";
+    
+    vegaEmbed('#college_barchart', vis2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  
+  
   </script>
 
   
