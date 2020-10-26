@@ -1,0 +1,58 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/apra28/FIT3179/main/NBA_filtered_data.csv"
+  },
+  "title": {
+    "text": "NBA Player Heatmap",
+    "subtitle": "Heatmap plots the height and weight of NBA players"
+  },
+  "transform": [
+    {
+      "filter": {
+        "and": [
+          {"field": "height", "valid": true},
+          {"field": "weight", "valid": true}
+        ]
+      }
+    }
+  ],
+  "mark": {"type": "rect"},
+  "width": 600,
+  "height": 400,
+  "encoding": {
+    "x": {
+      "bin": {"maxbins": 45},
+      "field": "weight",
+      "type": "quantitative",
+      "axis": {"tickSize": 4},
+      "title": "Weight"
+    },
+    "y": {
+      "bin": {"maxbins": 35},
+      "field": "height",
+      "type": "quantitative",
+      "title": "Height"
+    },
+    "color": {
+      "aggregate": "count",
+      "type": "quantitative",
+      "title": "Player Count",
+      "scale": {"scheme": "orangered"}
+    },
+    "tooltip": [
+      {"field": "__count", "type": "quantitative", "title": "Player Count"},
+      {
+        "field": "bin_maxbins_45_weight",
+        "type": "quantitative",
+        "title": "Minimum Weight"
+      },
+      {
+        "field": "bin_maxbins_35_height",
+        "type": "quantitative",
+        "title": "Minimum Height"
+      }
+    ]
+  },
+  "config": {"view": {"stroke": "transparent"}}
+}
