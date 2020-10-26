@@ -55,30 +55,34 @@
   
 <body>
 
-<h1>Week 10 Homework</h1>
+<div class="page">
 
-<h2>Where are NBA Players born?</h2>
-  
-<div class = "page" id="choropleth_map"></div>
+  <h1>Week 10 Homework</h1>
 
-<h2>Profile of College NBA Players over Time </h2>
+  <h2>Where are NBA Players born?</h2>
   
-<div id="bubble_plot"></div>
+  <div id="choropleth_map"></div>
 
-<script type="text/javascript">
+  <h2>Profile of College NBA Players over Time </h2>
+
+  <div id="bubble_plot"></div>
+
+  <script type="text/javascript">
+
+    var vis1 = "https://apra28.github.io/FIT3179/nba_map.json";
+
+    vegaEmbed('#choropleth_map', vis1).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    var vis2 = "https://apra28.github.io/FIT3179/nba_scatterplot.json";
+
+    vegaEmbed('#bubble_plot', vis2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </div> <!-- end page -->
   
-  var vis1 = "https://apra28.github.io/FIT3179/nba_map.json";
-  
-  vegaEmbed('#choropleth_map', vis1).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  
-  var vis2 = "https://apra28.github.io/FIT3179/nba_scatterplot.json";
-  
-  vegaEmbed('#bubble_plot', vis2).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
+
 </script>
-
 </body>
 </html>
