@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/apra28/FIT3179/main/nba_draftpicks.csv"
+  },
+  "title": {"text": "Average Draft Pick by College"},
+  "width": 700,
+  "height": 300,
+  "encoding": {"x": {"field": "College", "type": "nominal", "title": null}},
+  "layer": [
+    {
+      "mark": {"type": "point", "filled": true},
+      "encoding": {
+        "y": {
+          "field": "Average Pick No",
+          "type": "quantitative",
+          "title": "Average Draft Pick",
+          "axis": {"titleColor": "#a32e14"}
+        },
+        "size": {"value": 150},
+        "opacity": {"value": 1},
+        "color": {"value": "#a32e14"}
+      }
+    },
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "y": {
+          "field": "Total Picks",
+          "type": "quantitative",
+          "title": "Total Players Drafted",
+          "axis": {"titleColor": "#cf7123"}
+        },
+        "size": {"value": 10},
+        "opacity": {"value": 0.6},
+        "color": {"value": "#f7c8a1"}
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {}
+}
