@@ -3,7 +3,7 @@
   "title": {
     "text": "Profile of College NBA Players "
   },
-  "width": 600,
+  "width": 500,
   "height": 350,
   "data": {
     "url": "https://raw.githubusercontent.com/apra28/FIT3179/main/NBA_filtered_data.csv"
