@@ -1,10 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {
-    "text": "Top NBA Colleges",
-    "subtitle": "Top 20 Colleges with the most players in the NBA"
+    "text": "Top 20 NBA Colleges"
   },
-  "width": 700,
+  "width": 500,
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/apra28/FIT3179/main/nab_topk.csv"
@@ -12,7 +11,7 @@
   "transform": [{"filter": "datum.rank <= 20"}],
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Number of Players", "type": "quantitative"},
+    "x": {"field": "Number of Players", "type": "quantitative","title":"Number of Players Drafted"},
     "y": {
       "field": "College",
       "type": "nominal",
@@ -26,7 +25,7 @@
         "title": "Number of Players"
       }
     ],
-    "color": {"value": "#ff9900"}
+    "color": {"value": "#d65858"}
   },
   "config": {}
 }
