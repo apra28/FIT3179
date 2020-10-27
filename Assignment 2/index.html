@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> From College to NBA </title>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- custom style -->
+  <style>
+    *{
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    h1{
+      font-weight: 900;
+    }
+     body{
+       background-color: lightgray;
+     }
+     .page{
+       width: 1000px;    
+       background-color: whitesmoke; 
+       margin: auto;
+       padding: 50px;
+       padding-top: 35px;
+    }
+    .vis-container{
+      width: 100%;
+    }
+    .description h2, h1{
+      margin-top:0px;
+    }
+    .description-right {
+      padding-left: 20px;
+    }
+    .description-left{
+      padding-right: 20px;
+    }
+    .pure-g{
+      margin-bottom: 25px;
+    }
+    .small-font{
+        font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+ <div class="page">
+
+   <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Crime in USA</h1>
+        <p>An in-depth analysis into the most crime-infested US cities</p>
+      </div>
+    </div>
+  <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+          <div class="description description-left">
+            <h2> USA Cities Compared - 2015</h2>
+            <p> Violent crimes refer to instances of Homicides, Rape, Robberies or Assault. It is important to visualise crime statistics on a 'per capita' basis, as this normalises numbers for comparison. Looking at the map, we can see that St. Louis, Memphis and Detroit were the cities with highest crimes in 2015 </p>
+          </div>
+        </div>
+        <div class="pure-u-2-3">
+          <div id="vis1" class="vis-container"></div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-2-3">
+          <div id="vis2"  class="vis-container"></div>
+        </div>
+        <div class="pure-u-1-3">
+          <div class="description description-right">
+            <h2> Population Density impact on Assaults 2000-2015</h2>
+            <p> The belief is that cities with greater populations will inevitabley have greater numbers of crimes (most prominent being assault), however the graph indicates that is not the case. Atlanta, Orlando and Detroit having high numbers of assault. Additionally, we can see an overall reducing trend in assualt numbers as we travel through the years</p>
+          </div>
+        </div>
+      
+    </div>
+    <!-- end pure grid group -->
+   
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+          <div class="description description-left">
+            <h2>The significant drop in 1995 </h2>
+            <p>Looking at cities with the highest nominal (unadjusted) numbers of crime, we can see that crime numbers were significantly reduced between 1995-2005. This signifies the so called "Crime Drop". The crime drop or crime decline is a pattern observed in many countries whereby rates of many types of crime declined by 50% or more beginning in the mid 1990s. Further information can be found here:  <a href="https://en.wikipedia.org/wiki/Crime_drop" target="_blank">https://en.wikipedia.org/wiki/Crime_drop</a>.</p>
+          </div>
+        </div>
+        <div class="pure-u-2-3">
+          <div id="vis3" class="vis-container"></div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+
+   
+    <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-2-3">
+          <div id="vis4"  class="vis-container"></div>
+        </div>
+        <div class="pure-u-1-3">
+          <div class="description description-right">
+            <h2>Population increased at a constant rate</h2>
+            <p>It is interesting to see the the drop off in crime in 1995 is not linked to population changes over that period. Population has increased quite consistently, and New York soared between 1995-2000 yet showed a significant decrease in crime.</p>
+          </div>
+        </div>
+      
+    </div>
+    <!-- end pure grid group -->
+   
+       <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+          <div class="description description-left">
+            <h2>City comparison by crime type</h2>
+            <p> This chart places all types of violent crime as a percentange of the cities total violent crime in 2015. We can see that Orlando has the highest percentage of Assaults, Salt Lake City leads the way for highest percentage of Rapes, Cleveland has the most dominant percentage of robberies and New Orleans has the highest percentage of homicides. This chart helps show the build up of violent crimes in these cities for a better comparison</p>
+          </div>
+        </div>
+        <div class="pure-u-2-3">
+          <div id="vis5" class="vis-container"></div>
+        </div>
+    </div>
+    <!-- end pure grid group -->
+   
+       <!-- pure grid group -->
+    <div class="pure-g">
+        <div class="pure-u-2-3">
+          <div id="vis7"  class="vis-container"></div>
+        </div>
+        <div class="pure-u-1-3">
+          <div class="description description-right">
+            <h2>The most dangerous cities over time (1975-2015)</h2>
+            <p> Atlanta, Baltimore, Detroit, Orlando and Tampa have show the highest numbers of over the 40 years between 1975-2015. From the steamgraph we can see that 1993 was the pinnacle of Crime, reporting the highest numbers before the "Crime Drop-Off" as mentioned above. In all 5 cities we can see reductions in crime even in more recent periods (2006 - 2015)</p>
+          </div>
+        </div>
+      
+    </div>
+    <!-- end pure grid group -->
+   
+         
+  
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>This visualisation is created by <a href="https://github.com/Avyav/FIT3179" target="_blank">Avyav Vatsa</a>. The datasource is <a href="https://www.kaggle.com/marshallproject/crime-rates" target="_blank">Kaggle</a></href>.</p>
+      </div>
+    </div>
+  
+
+  </div> <!-- end page -->
+   
+<script type="text/javascript">
+  var specVis1 = "https://apra28.github.io/FIT3179/nba_map.json";
+  var specVis2= "https://apra28.github.io/FIT3179/nba_scatterplot.json";
+  var specVis3= "https://apra28.github.io/FIT3179/nba_collegebar.json";
+  var specVis4= "https://apra28.github.io/FIT3179/nba_heatmap.json";
+  var specVis5= "https://apra28.github.io/FIT3179/nba_averagedraft.json";
+  var specVis7= "./VIZ7_crimes_US.vl.json";
+
+  vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+   vegaEmbed('#vis2', specVis2, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+   vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+      vegaEmbed('#vis7', specVis7, {"actions": false}).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+</body>
+</html>
