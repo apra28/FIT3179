@@ -1,11 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {
-    "text": "Profile of College NBA Players ",
-    "subtitle": "Scattler Plot of the height and weight of NBA players from each college"
+    "text": "Profile of College NBA Players "
   },
-  "width": 750,
-  "height": 450,
+  "width": 600,
+  "height": 350,
   "data": {
     "url": "https://raw.githubusercontent.com/apra28/FIT3179/main/NBA_filtered_data.csv"
   },
@@ -37,8 +36,10 @@
   ],
   "mark": "circle",
   "encoding": {
-    "x": {"field": "height", "type": "quantitative", "scale": {"zero": false}},
-    "y": {"field": "weight", "type": "quantitative", "scale": {"zero": false}},
+    "x": {"field": "height", "type": "quantitative", "scale": {"zero": false},
+    "title":"Height"},
+    "y": {"field": "weight", "type": "quantitative", "scale": {"zero": false},
+    "title":"Weight"},
     "size": {"value": 45},
     "color": {"field": "college", "type": "nominal", "title": "College"},
     "opacity": {
