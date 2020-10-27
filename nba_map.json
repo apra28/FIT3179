@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {"text":"NBA Player Birth States ", "subtitle": "Percentage (%) of NBA players since 1950 born in each US State"},
-  "width": 800,
-  "height": 600,
+  "width": 500,
+  "height": 300,
   "data": {
     "url": "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json",
     "format": {"type": "topojson", "feature": "states"}
