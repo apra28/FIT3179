@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/apra28/FIT3179/main/nba_draftpicks.csv"
   },
   "title": {"text": "Average Draft Pick by College"},
-  "width": 700,
+  "width": 950,
   "height": 300,
   "encoding": {"x": {"field": "College", "type": "nominal", "title": null}},
   "layer": [
@@ -31,7 +31,7 @@
           "title": "Total Players Drafted",
           "axis": {"titleColor": "#cf7123"}
         },
-        "size": {"value": 10},
+        "size": {"value": 15},
         "opacity": {"value": 0.6},
         "color": {"value": "#f7c8a1"}
       }
