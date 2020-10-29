@@ -11,7 +11,7 @@
   "params": [
     {
       "name": "born_filter",
-      "value": 1950,
+      "value": 1921,
       "bind": {
         "input": "range",
         "min": 1921,
@@ -36,10 +36,10 @@
   ],
   "mark": "circle",
   "encoding": {
-    "x": {"field": "height", "type": "quantitative", "scale": {"zero": false},
-    "title":"Height"},
-    "y": {"field": "weight", "type": "quantitative", "scale": {"zero": false},
+    "x": {"field": "weight", "type": "quantitative", "scale": {"zero": false},
     "title":"Weight"},
+    "y": {"field": "height", "type": "quantitative", "scale": {"zero": false},
+    "title":"Height"},
     "size": {"value": 45},
     "color": {"field": "college", "type": "nominal", "title": "College"},
     "opacity": {
