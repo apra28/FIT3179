@@ -37,9 +37,9 @@
   "mark": "circle",
   "encoding": {
     "x": {"field": "weight", "type": "quantitative", "scale": {"zero": false},
-    "title":"Weight"},
+    "title":"Weight (kg)"},
     "y": {"field": "height", "type": "quantitative", "scale": {"zero": false},
-    "title":"Height"},
+    "title":"Height (cm)"},
     "size": {"value": 45},
     "color": {"field": "college", "type": "nominal", "title": "College"},
     "opacity": {
