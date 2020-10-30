@@ -27,7 +27,7 @@
       "type": "quantitative",
       "scale": {"type": "threshold",
                 "domain": [2,4,8],
-                "range": ["#fdbe85", "#fd8d3c", "#e84e27", "#911010"]},
+                "range": ["#f7c8a1", "#e39281", "#d14343", "#911010"]},
       "title": "% of Players"
     },
     "tooltip": [
