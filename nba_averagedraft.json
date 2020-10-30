@@ -6,8 +6,7 @@
   "title": {"text": "Average Draft Pick by College"},
   "width": 950,
   "height": 300,
-  "encoding": {"x": {"field": "College", "type": "nominal", "title": null
-  ,"axis": {"labelAngle": -45}}},
+  "encoding": {"x": {"field": "College", "type": "nominal", "title": null}},
   "layer": [
     {
       "mark": {"type": "point", "filled": true},
