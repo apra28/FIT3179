@@ -1,4 +1,4 @@
-
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {"text":"NBA Player Birth States "},
   "width": 550,
@@ -41,5 +41,3 @@
   },
   "config": {}
 }
-
-
