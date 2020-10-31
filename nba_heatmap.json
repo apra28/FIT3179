@@ -25,13 +25,13 @@
       "field": "weight",
       "type": "quantitative",
       "axis": {"tickSize": 4},
-      "title": "Weight"
+      "title": "Weight (kg)"
     },
     "y": {
       "bin": {"maxbins": 35},
       "field": "height",
       "type": "quantitative",
-      "title": "Height"
+      "title": "Height (cm)"
     },
     "color": {
       "aggregate": "count",
